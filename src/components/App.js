@@ -29,13 +29,15 @@ const App = () => {
   };
 
   return (
-    <div className="ui container">
-      <SearchBar onFormSubmit={onTermSubmit} />
+    <>
+      <div className="ui container searchbar">
+        <SearchBar onFormSubmit={onTermSubmit} />
+      </div>
       <div className="main-body">
         <VideoDetail video={selectedVideo} />
         <VideoList onVideoSelect={onVideoSelect} videos={videos} />
       </div>
-    </div>
+    </>
   );
 };
 

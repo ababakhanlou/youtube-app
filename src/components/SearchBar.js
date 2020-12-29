@@ -17,7 +17,12 @@ const SearchBar = ({ onFormSubmit }) => {
       <form onSubmit={onSubmit} className="field">
         <div className="field">
           <label>Video Search</label>
-          <input type="text" value={term} onChange={onInputChange} />
+          <input
+            type="text"
+            className="stretch"
+            value={term}
+            onChange={onInputChange}
+          />
         </div>
       </form>
     </div>
